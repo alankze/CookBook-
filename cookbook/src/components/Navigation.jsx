@@ -1,19 +1,22 @@
 
 const Navigation = () => {
 return (
-	<nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  p-2">
-		<ul className="flex flex-row justify-evenly items-center">
+	<nav>
+		<ul className="flex flex-row justify-evenly items-center m-2 p-4">
 			<li>
-				<a href="/" className="hover:bg-black hover:text-white">Home</a>
+				<a href="/" className="">Home</a>
 			</li>
 			<li>
-				<a href="/recipes" className="hover:bg-black hover:text-white">Recipes</a>
+				<a href="/recipes" className="">Recipes</a>
 			</li>
 			<li>
-				<a href="/about" className="hover:bg-black hover:text-white">About</a>
+				<a href="/recipes" className="text-3xl">LOGO</a>
 			</li>
 			<li>
-				<a href="/contact" className="hover:bg-black hover:text-white">Contact</a>
+				<a href="/about" className="">About</a>
+			</li>
+			<li>
+				<a href="/contact" className="">Contact</a>
 			</li>
 		</ul>
 

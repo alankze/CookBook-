@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #E5E3E3;
+	margin: 0;
+	padding: 0;
+}
+
+.all{
+margin-left: 20px;
+margin-right: 20px;
+}
+
+nav li a{
+	text-transform: uppercase;
+	color:#3e3128;
+}
