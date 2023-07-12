@@ -1,16 +1,12 @@
 //import { createClient } from 'contentful';
-import * as contentful from 'contentful';
+import {client} from '../contenful'
 import { useEffect, useState } from "react";
 
 const Hero = () => {
 
 const [hero, setHeroSection] = useState(null);
 
-const client = contentful.createClient({
-	space: import.meta.env.VITE_SPACE_ID,
-	environment: import.meta.env.VITE_ENVIRONMENT_NAME, // defaults to 'master' if not set
-	accessToken: import.meta.env.VITE_ACCESS_TOKEN,
-});
+
 
 useEffect(()=> {
 	client
@@ -19,7 +15,7 @@ useEffect(()=> {
 	.catch(console.error);
 }, []);
 
-console.log(hero);
+//console.log(hero);
 return (
 	<>
 {hero && 
