@@ -2,6 +2,7 @@ import Navigation from "./components/Navigation"
 // import Footer from "./components/Footer"
 // import RecipePage from "./components/RecipePage
 import Hero from "./components/Hero"
+import Card from "./components/Card"
 
 function App() {
  
@@ -10,6 +11,7 @@ function App() {
     <div className="all">
 	<Navigation></Navigation>
 	<Hero></Hero>
+	<Card></Card>
     </div>
   )
 }
