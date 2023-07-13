@@ -21,3 +21,7 @@ nav li a {
   text-transform: uppercase;
   color: #3e3128;
 }
+
+td {
+  padding: 20px;
+}
