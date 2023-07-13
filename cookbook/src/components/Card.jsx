@@ -1,6 +1,8 @@
 //import introImg from "../assets/hero.jpeg";
+
 import { useState, useEffect } from "react";
 import { client } from "../contenful";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   const [cardItem, setCardItem] = useState(null);
