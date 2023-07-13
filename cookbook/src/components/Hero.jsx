@@ -18,16 +18,16 @@ const Hero = () => {
       {hero &&
         hero.map((item) => (
           <div
-            className="flex flex-row justify-center items-center p-30 min-h-[45rem]"
+            className="flex w-full justify-center min-h-[45rem]  items-center pl-10rem"
             key={item.sys.id}
           >
-            <div className="text-center px-7 m-4">
-              <h2 className="font-bold text-xl py-2">{item.fields.title}</h2>
+            <div className="text-center w-2/6 m-4">
+              <h2 className="font-bold text-xl py-2 ">{item.fields.title}</h2>
               <p>{item.fields.description}</p>
             </div>
-            <div className="px-4 m-4" style={{ width: "100%" }}>
+            <div className="px-4 m-4">
               <img
-                className="absolute inset-0 z-[-1] w-full h-[40rem] top-20"
+                className="absolute inset-0 z-[-1] w-full h-[42rem] top-20"
                 src={item.fields.image.fields.file.url}
                 alt={item.fields.title}
               />
