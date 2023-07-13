@@ -7,13 +7,13 @@ import instagram from "../img/instagram.png";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="flex flex-col items-center gap-5 pt-10 pb-10  text-center bg-footer">
       <div>
-        <img src={Logo} />
+        <img className="w-20" src={Logo} />
       </div>
       <div>
         <h3>Stay in touch</h3>
-        <div>
+        <div className="flex gap-3">
           <img src={dribbble} />
           <img src={facebook} />
           <img src={twitter} />
@@ -21,8 +21,8 @@ const Footer = () => {
           <img src={instagram} />
         </div>
       </div>
-      <div>
-        <p> All Rights Reserved.</p>
+      <div className="">
+        <p> All Rights Reserved</p>
       </div>
     </footer>
   );
