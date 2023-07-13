@@ -16,7 +16,7 @@ const Card = () => {
 
   console.log(cardItem);
   return (
-    <div className="flex flex-row ml-20 pl-20 gap-10 ">
+    <div id="recipes" className="flex flex-row ml-20 pl-20 gap-10 ">
       {cardItem &&
         cardItem.map((item) => (
           <div
@@ -29,7 +29,11 @@ const Card = () => {
               alt={item.fields.title}
             />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{item.fields.title}</div>
+              <Link to={`/recipes/${item.sys.id}`}>
+                <div className="font-bold text-xl mb-2">
+                  {item.fields.title}
+                </div>
+              </Link>
               <p className="text-gray-700 text-base">
                 {item.fields.description}
               </p>
