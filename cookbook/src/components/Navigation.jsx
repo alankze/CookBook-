@@ -1,8 +1,8 @@
 // import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
-    <nav>
-      <ul className="flex flex-row justify-evenly items-center m-2 p-4">
+    <nav className="bg-amber-500">
+      <ul className="flex flex-row justify-evenly items-center m-2 p-4 ">
         <li>
           <a href="/" className="">
             Home
