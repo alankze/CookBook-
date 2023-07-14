@@ -7,10 +7,8 @@ import Card from "./Card";
 const HomePage = () => {
   return (
     <div className="all">
-      <Navigation></Navigation>
       <Hero></Hero>
       <Card></Card>
-      <Footer />
     </div>
   );
 };
