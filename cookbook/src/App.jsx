@@ -1,33 +1,22 @@
-import Navigation from "./components/Navigation"
-// import Footer from "./components/Footer"
-import RecipePage from "./components/RecipePage"
-import Hero from "./components/Hero"
-import Card from "./components/Card"
-
-import {Routes, Route} from 'react-router-dom';
-
-
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import RecipePage from "./components/RecipePage";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 function App() {
-
-return (
-
-    <div className="all">
-		<RecipePage/>
-	{/* <Navigation></Navigation>
-	<Hero></Hero>
-	<Card></Card>  */}
-
-		{/* <Routes> */}
-			{/* <Route path="/" element={}  />  */}
-{/* 	<Route path="/recipes/:recipesID" element={<RecipePage />}  />  */}
-		{/* <Route path="/recipes/" element={<RecipePage />}  /> */}
-			
-		{/* </Routes>
- */}
-	
-    </div>
-)
+  return (
+    <>
+      <Navigation></Navigation>
+      <div className="block">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/recipes/:recipesId" element={<RecipePage />} />
+        </Routes>
+      </div>
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
