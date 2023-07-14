@@ -14,23 +14,23 @@ const Card = () => {
       .catch(console.error);
   }, []);
 
-  console.log(cardItem);
+ // console.log(cardItem);
   return (
-    <div id="recipes" className="flex flex-row ml-20 pl-20 gap-10 ">
+    <div id="recipes" className="flex flex-row justify-center gap-6 p-5 m-10 ">
       {cardItem &&
         cardItem.map((item) => (
           <div
-            className="max-w-sm rounded overflow-hidden shadow-lg"
+            className="max-w-sm rounded overflow-hidden shadow-lg  w-[30%] bg-amber-500"
             key={item.sys.id}
           >
             <img
-              className="w-full"
+              className="w-full h-[50vh] "
               src={item.fields.image.fields.file.url}
               alt={item.fields.title}
             />
             <div className="px-6 py-4">
               <Link to={`/recipes/${item.sys.id}`}>
-                <div className="font-bold text-xl mb-2">
+                <div className="font-bold text-xl mb-2 text-center">
                   {item.fields.title}
                 </div>
               </Link>
@@ -38,15 +38,15 @@ const Card = () => {
                 {item.fields.description}
               </p> */}
             </div>
-            <div className="px-6 pt-4 pb-2">
+            <div className="px-6 pt-4 pb-2 text-center">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
+                #food
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
+                #easy
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #winter
+                #healty
               </span>
             </div>
           </div>

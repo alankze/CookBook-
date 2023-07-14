@@ -13,8 +13,9 @@ body {
 }
 
 .all {
-  /* margin-left: 20px;
-  margin-right: 20px; */
+   margin-left: 20px;
+  margin-right: 20px; 
+
 }
 
 nav li a {
@@ -22,6 +23,27 @@ nav li a {
   color: #3e3128;
 }
 
-td {
-  padding: 20px;
+h6{
+	margin-bottom: 1rem;
 }
+
+ table:nth-child(2){
+	
+	margin-top: 4rem;
+	/* display: flex; */
+/* 	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column; */
+	
+}
+
+table tr{
+	margin: 1rem;
+	text-align: left;
+}
+td{
+	padding: 8px;
+}
+
+
+
