@@ -3,6 +3,8 @@ import HomePage from "./components/HomePage";
 import RecipePage from "./components/RecipePage";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import About from "./components/About";
+
 
 function App() {
   return (
