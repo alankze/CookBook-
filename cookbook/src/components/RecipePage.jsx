@@ -17,7 +17,7 @@ const RecipePage = () => {
   console.log(recipeItem);
 
   return (
-    <div className="bg-gradient-to-r from-bk1 to-bk2  text-white m-auto mt-10 min-h-[50rem] w-[65%] rounded-xl pl-10 ">
+    <div className="bg-gradient-to-r from-bk1 to-bk2  text-white m-auto mt-10 min-h-[50rem] w-[65%] rounded-xl pl-10 pb-10 mb-10  ">
       <div className="flex min-h-[50rem] relative">
         {recipeItem && (
           <>
@@ -45,7 +45,7 @@ const RecipePage = () => {
               </div>
             </div>
 
-            <div className="absolute top-10 right-[20rem] w-[20rem]">
+            <div className="absolute top-10 right-[23rem] w-[20rem]">
               {
                 <img
                   className="img"
