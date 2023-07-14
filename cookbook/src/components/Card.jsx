@@ -1,4 +1,5 @@
 //import introImg from "../assets/hero.jpeg";
+
 import { useState, useEffect } from "react";
 import { client } from "../contenful";
 import { Link } from "react-router-dom";
@@ -15,7 +16,7 @@ const Card = () => {
 
   console.log(cardItem);
   return (
-    <div className="flex flex-row ml-20 gap-10 ">
+    <div id="recipes" className="flex flex-row ml-20 pl-20 gap-10 ">
       {cardItem &&
         cardItem.map((item) => (
           <div
@@ -33,15 +34,21 @@ const Card = () => {
                   {item.fields.title}
                 </div>
               </Link>
-              {/* <p className="text-gray-700 text-base"> */}
-              {/* {item.fields.description} */}
-              {/* </p> */}
+              {/* <p className="text-gray-700 text-base">
+                {item.fields.description}
+              </p> */}
             </div>
-            {/*   <div className="px-6 pt-4 pb-2">
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-  </div> */}
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #photography
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #travel
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #winter
+              </span>
+            </div>
           </div>
         ))}
     </div>
