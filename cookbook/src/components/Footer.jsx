@@ -7,7 +7,10 @@ import instagram from "../img/instagram.png";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="flex flex-col items-center gap-5 pt-10 pb-10  text-center bg-footer">
+    <footer
+      id="contact"
+      className="flex flex-col items-center gap-5 pt-10 pb-10  text-center bg-bk2 text-white"
+    >
       <div>
         <img className="w-20" src={Logo} />
       </div>

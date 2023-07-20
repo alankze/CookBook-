@@ -14,13 +14,13 @@ const Card = () => {
       .catch(console.error);
   }, []);
 
- // console.log(cardItem);
+  // console.log(cardItem);
   return (
     <div id="recipes" className="flex flex-row justify-center gap-6 p-5 m-10 ">
       {cardItem &&
         cardItem.map((item) => (
           <div
-            className="max-w-sm rounded overflow-hidden shadow-lg  w-[30%] bg-amber-500"
+            className="max-w-sm rounded overflow-hidden shadow-lg  w-[30%] bg-cards"
             key={item.sys.id}
           >
             <img
@@ -28,7 +28,7 @@ const Card = () => {
               src={item.fields.image.fields.file.url}
               alt={item.fields.title}
             />
-            <div className="px-6 py-4">
+            <div className="px-6 py-4 cards-item ">
               <Link to={`/recipes/${item.sys.id}`}>
                 <div className="font-bold text-xl mb-2 text-center">
                   {item.fields.title}

@@ -13,9 +13,8 @@ body {
 }
 
 .all {
-   margin-left: 20px;
-  margin-right: 20px; 
-
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 nav li a {
@@ -23,27 +22,26 @@ nav li a {
   color: #3e3128;
 }
 
-h6{
-	margin-bottom: 1rem;
+h6 {
+  margin-bottom: 1rem;
 }
 
- table:nth-child(2){
-	
-	margin-top: 4rem;
-	/* display: flex; */
-/* 	align-items: flex-start;
+table:nth-child(2) {
+  margin-top: 4rem;
+  /* display: flex; */
+  /* 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: column; */
-	
 }
 
-table tr{
-	margin: 1rem;
-	text-align: left;
+table tr {
+  margin: 1rem;
+  text-align: left;
 }
-td{
-	padding: 8px;
+td {
+  padding: 8px;
 }
 
-
-
+.cards-item {
+  opacity: 0.5;
+}

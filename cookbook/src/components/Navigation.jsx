@@ -2,33 +2,25 @@
 import phoenix from "../img/phoenix.png";
 const Navigation = () => {
   return (
-    <nav className="bg-amber-500">
+    <nav className="bg-nav">
       <ul className="flex flex-row justify-evenly items-center m-2 p-4 ">
         <li>
-          <a href="/" className="">
-            Home
-          </a>
+          <a href="/">Home</a>
         </li>
         <li>
           {/*  <NavLink to={`/recipes/${recipesID}`} className="">Recipes</NavLink>  */}
-          <a href="#recipes" className="">
-            Recipes
-          </a>
+          <a href="#recipes">Recipes</a>
         </li>
         <li>
           <a href="#" className="text-3xl">
-            <img src={phoenix} className="h-[80px]" />
+            <img src={phoenix} className="h-[80px] " />
           </a>
         </li>
         <li>
-          <a href="#about" className="">
-            About
-          </a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#contact" className="">
-            Contact
-          </a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
