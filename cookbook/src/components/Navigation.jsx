@@ -1,4 +1,5 @@
 // import { NavLink } from "react-router-dom";
+import phoenix from "../img/phoenix.png";
 const Navigation = () => {
   return (
     <nav className="bg-amber-500">
@@ -16,7 +17,7 @@ const Navigation = () => {
         </li>
         <li>
           <a href="#" className="text-3xl">
-            LOGO
+            <img src={phoenix} className="h-[80px]" />
           </a>
         </li>
         <li>
